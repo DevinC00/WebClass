@@ -38,7 +38,7 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 300px;
+    padding-top: 300px; /* navbar and body text was causing problems, will alter later */
 }
 main {
     width: 90%;
