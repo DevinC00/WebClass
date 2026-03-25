@@ -39,10 +39,9 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 100;
+    padding-top: 100px;
 }
 main {
-    padding-top: 150;
     width: 90%;
     max-width: 1200px; 
     margin: 0 auto; 
