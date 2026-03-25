@@ -39,14 +39,16 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 75;
+    padding-top: 100;
 }
 main {
-    padding-top: 60px;
     width: 90%;
     max-width: 1200px; 
     margin: 0 auto; 
     padding: 0 20px;
+}
+main p{
+    margin-bottom: 20px;
 }
 footer{
     align-items: center;
