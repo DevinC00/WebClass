@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An Introduction to HTML</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 class="page">HTML Introduction</h1>
+                <ul class="navi-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="Tags.html">HTML Basics</a></li>
+                    <li><a href="Key_Concepts.html">Key Concepts</a></li>
+                    <li><a href="References.html">References</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>HTML Introduction Quiz</h2>
+            <form id="quizform">
+                <!-- Fill in the blank -->
+                <p>1. The primary language for structuring web pages is <input type="text" id="q1">.</p>
+
+                <!-- Multi-select -->
+                <p>2. Which of the following is used to determine the structure and look of a web page? (Choose 2):</p>
+                <label><input type="checkbox" name="q2" value="Python"> Python</label><br>
+                <label><input type="checkbox" name="q2" value="Java"> Java</label><br>
+                <label><input type="checkbox" name="q2" value="HTML"> HTML</label><br>
+                <label><input type="checkbox" name="q2" value="CSS"> CSS</label>
+                
+                <!-- Multiple Choice 1 -->
+                <p>3. Which development gave web page developers greater control over the look of their web pages?</p>
+                <label><input type="radio" name="q3" value="JavaScript"> JavaScript </label><br>
+                <label><input type="radio" name="q3" value="HTML5"> HTML5 </label><br>
+                <label><input type="radio" name="q3" value="Cascading Style Sheet"> Cascading Style Sheet </label>
+
+                <!-- Multiple Choice 2 -->
+                <p>4. What does HTML stand for?</p>
+                <label><input type="radio" name="q4" value="Hyperlink Text Markup"> Hyperlink Text Markup</label><br>
+                <label><input type="radio" name="q4" value="Hyper Text Markup Language"> Hyper Text Markup Language</label><br>
+                <label><input type="radio" name="q4" value="Home Tool Markup"> Home Tool Markup</label>
+
+                 <!-- Multiple Choice 3 -->
+                <p>5. Who Invented The HyperText Markup Language?</p>
+                <label><input type="radio" name="q5" value="Dave Ragget"> Dave Ragget </label><br>
+                <label><input type="radio" name="q5" value="Sir Tim Berners-Lee"> Sir Tim Berners-Lee  </label><br>
+                <label><input type="radio" name="q5" value="Dan Connolly"> Dan Connolly </label>
+
+                <button type="button" onclick="checkScore()">Submit Quiz</button>
+                <button type="button" id="reset-btn" onclick="resetQuiz()">Retake Quiz</button>
+            </form>
+            <div id="result"></div>
+        </main>
+    </body>
+    <footer>
+        <a href="https://ksuweb.github.io/IT3203/">https://ksuweb.github.io/IT3203/</a>
+    </footer>
+</html>

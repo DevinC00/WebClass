@@ -38,7 +38,7 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 300px; /* navbar and body text was causing problems, will alter later */
+    padding-top: 250px; /* navbar and body text was causing problems, will alter later */
 }
 main {
     width: 90%;
@@ -76,4 +76,26 @@ ul li p::marker{
     color:#0d6eff;
     content: '✦';
     font-size: 1.25rem;
+}
+
+#quizform {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0d6eff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
 }
