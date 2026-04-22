@@ -52,10 +52,13 @@
                 <label><input type="radio" name="q5" value="Sir Tim Berners-Lee"> Sir Tim Berners-Lee  </label><br>
                 <label><input type="radio" name="q5" value="Dan Connolly"> Dan Connolly </label>
 
-                <button type="button" onclick="checkScore()">Submit Quiz</button>
+                <button type="button" id="submit-btn" onclick="checkScore()">Submit Quiz</button>
                 <button type="button" id="reset-btn" onclick="resetQuiz()">Retake Quiz</button>
             </form>
-            <div id="result"></div>
+            <div id="results-container" style="display:none;">
+                <p id="total-score-text"></p>
+                <p id="pass-fail-text"></p>
+            </div>
         </main>
     </body>
     <footer>

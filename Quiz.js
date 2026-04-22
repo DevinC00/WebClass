@@ -34,7 +34,7 @@ function checkQuiz() {
     }}
 function resetQuiz() {
     // Clear inputs
-    document.getElementById('quizForm').reset();
+    document.getElementById('quizform').reset();
     // Reset buttons
     document.getElementById('submit-btn').style.display = 'inline-block';
     document.getElementById('reset-btn').style.display = 'none';
