@@ -27,11 +27,16 @@ function checkQuiz() {
     if (score >= 4) {
         passFail.innerText = "RESULT: PASSED";
         passFail.className = "pass";
+        passFail.style.color = "green";
     } 
     else {
     passFail.innerText = "RESULT: FAILED";
     passFail.className = "fail";
-    }}
+    passFail.style.color = "red";
+    }
+    document.getElementById('submit-btn').style.display = 'none';
+    document.getElementById('reset-btn').style.display = 'inline-block';
+}
 function resetQuiz() {
     // Clear inputs
     document.getElementById('quizform').reset();
