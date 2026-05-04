@@ -177,6 +177,8 @@ button:hover {
 
     .navi-links {
         position: static;
+        transform: none;
+        display:flex;
         height: auto;
         width: auto;
         flex-direction: row;
