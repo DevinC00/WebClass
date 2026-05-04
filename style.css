@@ -29,6 +29,7 @@ nav {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: medium;
+    overflow-x: hidden;
 }
 .navi-links li a:hover{
     color: black;
@@ -121,7 +122,7 @@ button:hover {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     .nav-links {
     position: absolute;
     right: 0px;
