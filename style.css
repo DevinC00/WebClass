@@ -29,7 +29,6 @@ nav {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: medium;
-    overflow-x: hidden;
 }
 .navi-links li a:hover{
     color: black;
@@ -40,6 +39,7 @@ body {
     background: white;
     color: black;
     padding-top: 250px; 
+    overflow-x: hidden;
 }
 main {
     width: 90%;
@@ -123,7 +123,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .nav-links {
+    .navi-links {
     position: absolute;
     right: 0px;
     top: 8vh;
