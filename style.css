@@ -57,9 +57,9 @@ body {
     overflow-x: hidden;
 }
 main {
-    width: 90%;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    width: 95%;
+    max-width: 1100px; 
+    margin: 1.5rem auto; 
     padding: 0 20px;
 }
 main p{
@@ -95,11 +95,12 @@ ul li p::marker{
 }
 
 #quizform {
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #0d6eff;
-    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: var(--primary-blue);
+    border-radius: 8px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -118,7 +119,7 @@ button:hover {
 
 .wrap-around{
     float: right;
-    margin: 20px;
+    margin: 1rem 0;
     max-width: 250px;
 }
 
@@ -170,5 +171,18 @@ button:hover {
 .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
 
 @media screen and (min-width: 601px) {
-   
+   .page { font-size: 1.75rem; }
+
+    .burger { display: none; }
+
+    .navi-links {
+        position: static;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        transform: translateX(0);
+        background: transparent;
+        padding-top: 0;
+        gap: 1.8rem;
+    }
 }
