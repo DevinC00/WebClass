@@ -4,13 +4,14 @@ nav {
     align-items: center;
     justify-content: flex-end; 
     width: 100%;
-    position: Fixed; /* holds bar in position */
+    position: fixed; /* holds bar in position */
     top: 0; /* position set to top of page */
+    left: 0;
     background-color: #0d6eff;
     color: white;
     padding: 1rem;
     backdrop-filter: blur(20px);
-
+    z-index: 1000;
 }
 .page{
     font-size: 1.75rem;
@@ -38,7 +39,7 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 250px; 
+    padding-top: 80px; 
     overflow-x: hidden;
 }
 main {
@@ -122,17 +123,22 @@ button:hover {
   transition: all 0.3s ease;
 }
 
+@keyframes navLinkFade {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0px); }
+}
+
 @media screen and (max-width: 600px) {
     .navi-links {
     position: absolute;
     right: 0px;
-    top: 8vh;
+    top: 60px;
     height: 92vh;
     background-color: #0d6eff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 60%;
     transform: translateX(100%); 
     transition: transform 0.5s ease-in;
     }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.getElementById('.burger');
-    const nav = document.getElementById('.navi-links');
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('.navi-links');
     const navLinks = document.querySelectorAll('.navi-links li');
 
     burger.addEventListener('click', () => {
