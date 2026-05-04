@@ -1,29 +1,43 @@
 * { margin:0; padding:0; box-sizing: border-box;}
+:root {
+    --primary-blue: #0d6eff;
+    --nav-height: 70px;
+}
 nav {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: space-between; 
     width: 100%;
+    height: var(--nav-height);
     position: fixed; /* holds bar in position */
     top: 0; /* position set to top of page */
     left: 0;
-    background-color: #0d6eff;
+    background-color: var(--primary-blue);
     color: white;
-    padding: 1rem;
+    padding: 0 1.5rem;
     backdrop-filter: blur(20px);
     z-index: 1000;
 }
 .page{
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-right: auto;
 }
 .navi-links{
     list-style: none; /* removes bullet points */
+    position: absolute;
+    right: 0;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    width: 70%;
     display: flex;  /* flex display */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
     gap: 1.8rem;    /* adds spacing between the list items */
-    margin-right: 25px; 
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
 }
 .navi-links li a{
     position: relative;
@@ -39,7 +53,7 @@ body {
     font-family: 'Aptos', 'Calibri', sans-serif;
     background: white;
     color: black;
-    padding-top: 120px; 
+    padding-top: var(--nav-height); 
     overflow-x: hidden;
 }
 main {
@@ -155,9 +169,6 @@ button:hover {
 .toggle .line2 { opacity: 0; }
 .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
+   
 }
-
-@media screen and (min-width: 768px) {
-}
-
